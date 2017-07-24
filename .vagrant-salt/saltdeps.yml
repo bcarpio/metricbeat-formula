@@ -1,0 +1,5 @@
+name: metricbeat
+deps:
+  elasticyumrepo:
+    git: https://github.com/bcarpio/elasticyumrepo-formula.git
+    branch: master
