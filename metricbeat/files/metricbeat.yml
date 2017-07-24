@@ -12,7 +12,8 @@ metricbeat.modules:
   period: 10s
   processes: ['.*']
 output.elasticsearch:
-  hosts: {{ hosts }}
+{% set eshosts = salt['mine.get']('G@appname:metricsdb and G@roles:elasticsearch', 'network.ip_addrs', 'compound') %}
+  hosts: [ "{{ eshosts|join('", "') }}:9200" ]
   protocol: "http"
   username: "{{ username }}"
   password: "{{ password }}"

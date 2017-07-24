@@ -1,0 +1,4 @@
+roles:
+  - elasticsearch
+appname:
+  - metricsdb

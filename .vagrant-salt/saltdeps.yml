@@ -3,3 +3,6 @@ deps:
   elasticyumrepo:
     git: https://github.com/bcarpio/elasticyumrepo-formula.git
     branch: master
+  elasticsearch:
+    git: https://github.com/bcarpio/elasticsearch-formula.git
+    branch: master

@@ -16,7 +16,6 @@ metricbeat-yml:
     - context:
       username: {{ metricbeat.username }}
       password: {{ metricbeat.password }}
-      hosts: {{ metricbeat.hosts}}
 
 metricbeat-service:
   service.running:

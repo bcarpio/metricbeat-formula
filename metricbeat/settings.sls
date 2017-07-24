@@ -5,5 +5,4 @@
 {%- do metricbeat.update( {
   'username' : p.get('username', 'elastic'),
   'password' : p.get('password', 'changeme'),
-  'hosts'    : p.get('hosts', '["localhost:9200"]')
 }) %}
